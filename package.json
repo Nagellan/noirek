@@ -1,0 +1,13 @@
+{
+  "name": "noirek.xyz",
+  "version": "0.0.1",
+  "description": "Parser for nometa.xyz-like sites from .md-files",
+  "main": "index.js",
+  "repository": "https://github.com/Nagellan/noirek.xyz.git",
+  "author": "Irek Nazmiev <ireknazmievirek@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "marked": "^1.2.8"
+  }
+}
