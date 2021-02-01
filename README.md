@@ -3,5 +3,5 @@
 
 ```
 yarn
-node parse.js README.md 
+node parse.js README.md index.html
 ```
