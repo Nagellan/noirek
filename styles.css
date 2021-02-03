@@ -1,30 +1,85 @@
 html {
-    font-size: 16px;
+    font-size: 20px;
     color: #333;
     font-family: sans-serif;
+
+    --light-blue: #f5fafc;
+    --blue: #dcf2fa;
+    --dark-blue: #bfe9f9;
+    --grey-blue: #8ca8b4;
+
+    --color-text-tertiary: #6a737d;
+    --color-markdown-blockquote-border: #dfe2e5;
+    --color-markdown-table-border: #dfe2e5;
+    --color-text-link: #0366d6;
+    --color-grey: #ccc;
 }
 
 body {
     margin: 0;
 }
 
-h1 {
-    margin: 2rem 0;
-    font-size: 2rem;
-    line-height: 1.125em;
+article h1 {
+    margin: 1.6rem 0;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+article h2 {
+    font-size: 1.33913rem;
+}
+
+article h3 {
+    font-size: 1.2rem;
+}
+
+article h4 {
+    font-size: 1.07826rem;
+}
+
+article h5 {
+    font-size: 1.013rem;
+}
+
+article h6 {
+    font-size: 1rem;
+}
+
+article p,
+article li,
+article td,
+article th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+article pre,
+article code {
+    background-color: var(--light-blue);
+}
+
+article pre code,
+article code {
+    font-size: 0.85rem;
+    line-height: 1rem;
+}
+
+article blockquote {
+    color: var(--grey-blue);
+    border-color: var(--blue);
 }
 
 article {
-    width: 50rem;
+    width: 40rem;
     margin: 0 auto 1rem auto;
-    font-size: 1.25rem;
-    line-height: 1.5em;
+    /* font-size: 1.25rem;
+    line-height: 1.5em; */
 }
 
-hr {
+article hr {
     margin: 3rem;
     border-bottom: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--color-grey);
 }
 
 footer {
@@ -44,7 +99,7 @@ footer a {
 }
 
 @media (max-width: 768px) {
-    h1 {
+    article h1 {
         font-size: 1.5rem;
         text-align: center;
     }

@@ -39,8 +39,8 @@ function html(bodyContent) {
                 content="nometa, nometa.xyz, nohello, nohello.com, neprivet, neprivet.ru, noirek, noirek.xyz, Ирек, Назмиев, Irek, Nazmiev"
             />
 
-            <link rel="stylesheet" href="styles.css" />
             <link rel="stylesheet" href="github-md.css" />
+            <link rel="stylesheet" href="styles.css" />
          </head>
     
          <body>
