@@ -44,12 +44,12 @@ function html(bodyContent) {
          </head>
     
          <body>
-            <article>
+            <article class="container">
                 ${bodyContent}
             </article>
 
             <footer>
-                <div class="row">
+                <div class="row container">
                     Пародия на
                     <a href="http://neprivet.ru">neprivet.ru</a> (автор Андрей Самсонов), код на
                     <a href="https://github.com/kryzhovnik/neprivet">

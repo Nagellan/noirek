@@ -6,7 +6,7 @@ html {
     --light-blue: #f5fafc;
     --blue: #dcf2fa;
     --dark-blue: #bfe9f9;
-    --grey-blue: #8ca8b4;
+    --grey-blue: #5d7983;
 
     --color-text-tertiary: #6a737d;
     --color-markdown-blockquote-border: #dfe2e5;
@@ -69,8 +69,11 @@ article blockquote {
     border-color: var(--blue);
 }
 
-article {
+.container {
     width: 40rem;
+}
+
+article {
     margin: 0 auto 1rem auto;
     /* font-size: 1.25rem;
     line-height: 1.5em; */
@@ -84,12 +87,11 @@ article hr {
 
 footer {
     background: #334;
-    padding: 1rem 0;
-    font-size: 0.875rem;
+    padding: 0.8rem 0;
 }
 
 footer .row {
-    width: 50rem;
+    font-size: 0.7rem;
     margin: 0 auto;
     color: #ccc;
 }
@@ -117,9 +119,9 @@ footer a {
 }
 
 #octicon-icon {
-    height: 1.25rem;
-    width: 1.25rem;
-    padding: 0 0.25rem 0 0.5rem;
+    height: 1rem;
+    width: 1rem;
+    padding: 0 0.2rem 0 0.4rem;
     fill: #aaa;
     vertical-align: bottom;
 }
