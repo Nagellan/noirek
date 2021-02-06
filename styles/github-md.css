@@ -20,18 +20,6 @@ article a:not([href]) {
     text-decoration: none;
 }
 
-article p,
-article blockquote,
-article ul,
-article ol,
-article dl,
-article table,
-article pre,
-article details {
-    /* margin-top: 0;
-    margin-bottom: 16px; */
-}
-
 article blockquote {
     margin-left: 0;
     padding: 0 1rem;
