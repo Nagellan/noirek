@@ -7,8 +7,17 @@
     "author": "Ирек Назмиев <ireknazmievirek@gmail.com>",
     "license": "MIT",
     "private": false,
+    "scripts": {
+        "parse": "node utils/parse.js md/MD_REFERENCE.md pages/index.html"
+    },
     "dependencies": {
         "marked": "^1.2.8",
         "prettier": "^2.2.1"
+    },
+    "devDependencies": {
+        "eslint": "^7.19.0",
+        "eslint-config-airbnb-base": "^14.2.1",
+        "eslint-config-prettier": "^7.2.0",
+        "eslint-plugin-import": "^2.22.1"
     }
 }
