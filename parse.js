@@ -1,15 +1,13 @@
 const fs = require('fs');
 const marked = require('marked');
-const wrapHtml = require('./wrapHtml.js');
+const wrapHtml = require('./helpers/wrapHtml.js');
+const {
+    hasExtension,
+    getFileName,
+    isRealDirectory,
+} = require('./helpers/utils.js');
 
 const [inPath, outPath] = process.argv.slice(2);
-
-const isRealDirectory = (path) => fs.lstatSync(path).isDirectory();
-const hasExtension = (path) =>
-    path.split('/').splice(-1, 1)[0].indexOf('.') === -1;
-
-const getFileName = (filePath) =>
-    filePath.split('/').splice(-1, 1)[0].split('.').splice(-2, 1)[0];
 
 const parse = (inFilePath) => {
     const outFilePath = hasExtension(outPath)
