@@ -4,5 +4,5 @@
 
 ```
 yarn
-yarn parse # или npm run parse
+yarn parse md pages # или npm run parse md pages
 ```

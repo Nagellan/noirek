@@ -8,7 +8,7 @@
     "license": "MIT",
     "private": false,
     "scripts": {
-        "parse": "node utils/parse.js md/MD_REFERENCE.md pages/index.html"
+        "parse": "node utils/parse.js"
     },
     "dependencies": {
         "marked": "^1.2.8",
