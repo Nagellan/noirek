@@ -17,6 +17,9 @@ html {
 
 body {
     margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
 }
 
 article h1 {
@@ -88,6 +91,7 @@ article hr {
 footer {
     background: #334;
     padding: 0.8rem 0;
+    margin-top: auto;
 }
 
 footer .row {
