@@ -1,7 +1,8 @@
 # noirek
+
 Проект по защите Ирека в российском сегменте сети Интернет
 
-```
+```bash
 yarn
-node parse.js README.md index.html
+yarn parse md pages # или npm run parse md pages
 ```

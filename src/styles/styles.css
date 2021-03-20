@@ -1,0 +1,249 @@
+/* Shared */
+
+.container {
+    width: 40rem;
+    margin: 0 auto;
+}
+
+/* Layout */
+
+html {
+    font-size: 20px;
+    color: #333;
+    font-family: sans-serif;
+
+    --light-blue: #f5fafc;
+    --blue: #dcf2fa;
+    --dark-blue: #bfe9f9; /* For dialog block*/
+    --grey-blue: #5d7983;
+
+    --color-text-tertiary: #6a737d;
+    --color-markdown-blockquote-border: #dfe2e5;
+    --color-markdown-table-border: #dfe2e5;
+    --color-text-link: #0366d6;
+    --color-grey: #ccc;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+article.container {
+    margin: 0 auto 1rem auto;
+}
+
+/* Typography */
+
+article h1 {
+    margin: 1.6rem 0;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+article h2 {
+    font-size: 1.33913rem;
+}
+
+article h3 {
+    font-size: 1.2rem;
+}
+
+article h4 {
+    font-size: 1.07826rem;
+}
+
+article h5 {
+    font-size: 1.013rem;
+}
+
+article h6 {
+    font-size: 1rem;
+}
+
+article p,
+article li,
+article td,
+article th {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+article pre,
+article code {
+    background-color: var(--light-blue);
+}
+
+article pre code,
+article code {
+    font-size: 0.85rem;
+    line-height: 1rem;
+}
+
+article blockquote {
+    color: var(--grey-blue);
+    border-color: var(--blue);
+}
+
+article hr {
+    margin: 3rem;
+    border-bottom: 0;
+    border-top: 1px solid var(--color-grey);
+}
+
+/* Dialog block [NOT YET ADDED] */
+
+/* article .dialog-block {
+    margin: 0 -0.75rem;
+    padding: 1.5rem 1rem;
+    background: #f5fafc;
+}
+
+article .dialog-line {
+    font-size: 0.9rem;
+    line-height: 1.325em;
+    margin-bottom: 0.75rem;
+}
+
+article .dialog-line:last-child {
+    margin-bottom: 0;
+}
+
+article .dialog-line .name {
+    width: 7rem;
+    float: left;
+    padding-top: 0.325rem;
+    font-weight: 700;
+    line-height: 1.1rem;
+    color: #8ca8b4;
+    text-align: right;
+}
+
+article .dialog-line .content {
+    position: relative;
+    padding: 0.337rem 1.5rem;
+    margin: 0 5rem 0 8rem;
+    border-radius: 0.25rem;
+}
+
+article .dialog-line .content::before {
+    position: absolute;
+    display: block;
+    content: '';
+    left: -0.25rem;
+    top: 0.625rem;
+    width: 0;
+    height: 0;
+    border-top: 0.25rem solid transparent;
+    border-bottom: 0.25rem solid transparent;
+
+    border-right: 0.25rem solid;
+}
+
+article .dialog-line.-you .content {
+    background: #bfe9f9;
+}
+
+article .dialog-line.-you .content::before {
+    border-right-color: #bfe9f9;
+}
+
+article .dialog-line.-he .content {
+    background: #dcf2fa;
+}
+
+article .dialog-line.-he .content::before {
+    border-right-color: #dcf2fa;
+}
+
+article .dialog-line .time {
+    position: absolute;
+    top: 0.325rem;
+    right: -5rem;
+    color: #8ca8b4;
+    font-size: 0.75rem;
+}
+
+article .dialog-comment {
+    color: #8ca8b4;
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 1rem 0;
+} */
+
+/* Footer */
+
+footer {
+    font-size: 0.7rem;
+    color: #ccc;
+
+    background: #334;
+    padding: 0.8rem 0;
+    margin-top: auto;
+}
+
+footer a {
+    color: #aaa;
+}
+
+footer .github-icon {
+    height: 1rem;
+    width: 1rem;
+    padding: 0 0.2rem 0 0.4rem;
+    fill: #aaa;
+    vertical-align: bottom;
+}
+
+/* Mobile [NOT YET FINISHED ] */
+
+@media (max-width: 768px) {
+    article h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    article {
+        font-size: 1.125rem;
+    }
+
+    article,
+    footer .row {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.75rem;
+    }
+}
+
+@media (max-width: 414px) {
+    .dialog-line {
+        margin-bottom: 1rem;
+    }
+
+    .dialog-line .name {
+        width: auto;
+        float: none;
+        text-align: left;
+        padding-top: 0;
+    }
+
+    .dialog-line .content {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .dialog-line .content::before {
+        display: none;
+    }
+
+    .dialog-line .time {
+        right: 0;
+        top: -1rem;
+    }
+
+    .dialog-comment {
+        margin-bottom: 0.75rem;
+        text-align: left;
+    }
+}
