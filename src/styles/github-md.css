@@ -1,8 +1,4 @@
 article {
-    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
-        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; */
-    /* font-size: 16px;
-    line-height: 1.5; */
     word-wrap: break-word;
 }
 
@@ -167,12 +163,12 @@ article img[align='left'] {
 }
 
 article code {
-    padding: 0.2rem 0.4rem;
-
     margin: 0;
-    font-size: 85%;
-    background-color: var(--color-markdown-code-bg);
+    padding: 0.2rem 0.4rem;
     border-radius: 6px;
+    background-color: var(--color-markdown-code-bg);
+
+    font-size: 85%;
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
 }
 
@@ -201,8 +197,6 @@ article pre > code {
 article pre {
     padding: 16px;
     overflow: auto;
-    /* font-size: 85%;
-    line-height: 1.45; */
     background-color: var(--color-bg-tertiary);
     border-radius: 6px;
 }
